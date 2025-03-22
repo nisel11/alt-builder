@@ -14,7 +14,7 @@ sudo podman run -d --privileged \
 ```
 #### For login:
 ```
-sudo podman -it exec alt-builder su - builder
+sudo podman exec -it alt-builder su - builder
 ```
 #### It's used in [ALT-Image-Builder](https://github.com/nisel11/alt-image-builder) action
 ##### You can add ```-v "/some/folder/in/host:/any/folder"``` for add folder to container but user in container have not 1000 id so you need sudo for do anything with this folders
