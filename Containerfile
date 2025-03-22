@@ -10,8 +10,7 @@ STOPSIGNAL SIGRTMIN+3
 
 # Install packages for building
 RUN apt-get update && \
-    apt-get install -y sudo git make hasher hasher-priv mkimage mkimage-preinstall && \
-    apt-get install -y gcc rpm-build rpmlint python gear patch rpmdevtools fossology-nomos && \
+    apt-get install -y sudo neovim micro nano git make hasher hasher-priv mkimage mkimage-preinstall gcc rpm-build rpmlint python gear patch rpmdevtools fossology-nomos && \
     apt-get clean -y
 
 # Remove !container from hasher-privd service
